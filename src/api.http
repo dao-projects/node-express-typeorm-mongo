@@ -1,0 +1,60 @@
+
+###
+GET http://localhost:3789/dev
+Accept: application/json
+
+###
+POST http://localhost:3789/dev
+Content-Type: application/json
+
+{
+  "codePath":"I:\\project\\web\\vue-tax-pc",
+  "author":"道心",
+  "name":"税务信用云-PC",
+  "descript":"税务信用云-PC 给银行和企业用户提供",
+  "depurl":"https://swxyy.guizhou.chinatax.gov.cn/",
+  "testurl":"http://192.168.3.6:9900/",
+  "devurl":"http://192.168.3.5:9900/",
+  "gitPath":"http://192.168.3.6:8989/web/vue-tax-pc.git",
+  "isPublished":true,
+  "type":0
+}
+###
+
+
+#============================
+
+### 查询所有
+GET http://localhost:3789/user
+Accept: application/json
+
+###
+
+GET http://localhost:3789/user/6017c57709644552687ca9ae
+Accept: application/json
+
+###
+
+POST http://localhost:3789/user
+Content-Type: application/json
+
+{
+	"username":"test",
+	"password":"123456",
+	"phone":"17812345678",
+	"age":21
+}
+
+
+###
+
+POST http://localhost:3789/user/login
+Content-Type: application/json
+
+{
+	"username":"admin",
+	"password":"123456"
+}
+
+
+###

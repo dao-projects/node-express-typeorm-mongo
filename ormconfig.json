@@ -1,0 +1,28 @@
+{
+    "type": "mongodb",
+    "host": "192.168.3.6",
+    "port": 27017,
+    "username": "test",
+    "password": "123456",
+    "database": "orm",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "synchronize": true,
+    "logging": false,
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
